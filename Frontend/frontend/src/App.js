@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/students")
+      .get("https://task16-project-deployment-16.onrender.com/api/students")
       .then((res) => setStudents(res.data))
       .catch((err) => console.log(err));
   }, []);
